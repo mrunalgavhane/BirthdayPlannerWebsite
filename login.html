@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Party Planner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+
+
+    <script>
+        function myFunction() {
+            var email = document.getElementById("ema").value;
+            var username = document.getElementById("user").value;
+            var password = document.getElementById("pass").value;
+            var success = document.getElementById("success");
+
+            if (email == "" || username == "" || password == "" || email == null || username == null || password == null) {
+                alert("Information Missing!!!");
+                //fail.classList.toggle("show");
+            }
+
+            else {
+                success.classList.toggle("show");
+            }
+        }
+
+
+
+    </script>
+    <style>
+        :is(.navbar, .burger, .dropdowns) {
+            position: fixed;
+
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar {
+            z-index: 1;
+            left: 0;
+            display: flex;
+            align-items: stretch;
+            height: 72px;
+
+            color: #f9f9f9;
+        }
+
+        .burger {
+            z-index: 3;
+            right: 0;
+            display: grid;
+            place-items: center;
+            width: 72px;
+            height: 72px;
+            background-image: url("menu.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        body.open .burger {
+            background-image: url("close.svg");
+        }
+
+        @media (width >=500px) {
+            .burger {
+                display: none;
+            }
+        }
+
+        ul {
+            list-style: none;
+            /* Remove default bullets */
+        }
+
+        a {
+            margin-top: auto;
+            color: black;
+            font-size: 25px;
+            text-decoration: none;
+        }
+    </style>
+    <style>
+        .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* The actual popup */
+        .popup .popuptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <img src="logo.png" alt="logo" width="100" height="93">&ensp;
+                <a class="navbar-brand" href="#">Party Planner</a>
+            </ul>
+        </div>
+
+
+
+    </nav>
+    <div class="content">
+
+        <div class="container">
+
+
+            <div class="nav">
+                <button class="btn btn1" id="btns1" onclick="showLogin()">Login</button>
+                <button class="btn btn2" id="btns2" onclick="showSignup()">Sign Up</button>
+            </div>
+
+            <div class="main">
+
+                <div id="login" class="loginClass">
+                    <input type="text" id="username" placeholder="Username" required><br>
+                    <input type="password" id="password" placeholder="Password" required><br>
+
+                    <button id="pop" type="submit" class="popup" onclick="validate()">LOGIN</button><br>
+
+                    <a href="#" onclick="showSignup()">No Account? Create one</a>
+
+                </div>
+
+                <div id="signUp" class="signupClass">
+                    <input type="email" id="ema" placeholder="Email" required><br>
+                    <input type="text" id="user" placeholder="Username" required><br>
+                    <input type="password" id="pass" placeholder="Password" required><br>
+                    <button type="submit" class="popup" id="signBtn" onclick="myFunction()">Create Account
+                        <span class="popuptext" id="success">Account Created</span>
+
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

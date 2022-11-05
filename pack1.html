@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Party Planner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="packk1.css">
+
+
+    <script>
+        function home() {
+            window.location("home.html");
+        }
+        function about() {
+            window.location("about.html");
+        }
+        function book() {
+            window.location("book.html");
+        }
+
+
+
+    </script>
+
+    <style>
+        body {
+            background-color: ghostwhite;
+        }
+
+        .Parent {
+            background-image: "birthdaybg.jpg";
+            height: 60vh;
+            display: flex;
+            flex-direction: row;
+            border: 10px;
+            background-color: white;
+        }
+
+        .child1 {
+            width: 50%;
+            text-align: left;
+            color: white;
+
+        }
+
+        .child2 {
+            width: 50%;
+            height: 55vh;
+            line-height: 1.5em;
+            margin: 20px;
+            font-size: 26px;
+        }
+    </style>
+    <style>
+        #borderimg1 {
+            border: 6px solid #FF69B4;
+            padding: 20px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+
+        }
+
+        #borderimg2 {
+            border: 6px solid #ecd3b8;
+            padding: 20px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        .row {
+            display: flex;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .col-md-4 {
+            margin-left: 40px;
+            margin-right: 40px;
+            background-size: 10px;
+            border-color: #ecd3b8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 25px;
+            text-align: left;
+            min-height: 300px;
+            box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 12px;
+        }
+
+        .block {
+            display: block;
+            width: 50ch;
+            align-items: center;
+            padding: 15px 32px;
+            background-color: #EAADC6;
+            font-size: 10px;
+            margin: auto;
+            font-size: 30px;
+            cursor: pointer;
+            text-align: center;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        .glow-button:hover {
+            color: rgba(255, 255, 255, 1);
+            box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+        }
+
+
+
+        h1 {
+            font-size: 60px;
+        }
+
+        ul {
+            list-style: none;
+            /* Remove default bullets */
+        }
+
+        a {
+            margin-top: auto;
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function nextpage() {
+            window.location = "book.html";
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <a class="navbar-brand" href="home.html">Party Planner</a>
+            </ul>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li><a href="home.html">Home</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+            <li><a href="home.html#section1">Testimonals</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+            <li><a href="home.html#section2">Contact Us</a></li>
+        </ul>
+
+
+    </nav>
+    <br>
+    <br>
+    <div>
+
+        <div id="bag">
+            <h1 align="center">Balloon Decoration</h1>
+        </div>
+        <div id="borderimg1" class="col-md-4 col-afternoon">
+            <div class="Parent">
+
+                <div class="child1">
+                    <img height="400" width="700" src="deco.jpg" alt="">
+                </div>
+
+                <div class="child2">
+                    <h2 align="center">Decoration</h2>
+                    <ul style="list-style-type:square;">
+                        <i>Name board</i><br>
+                        <i>2 Balloon pillars / 1 Balloon arch</i><br>
+                        <i>2 Balloon standees near the cake table</i><br>
+                        <i>Welcome board with balloon standee</i><br>
+                        <i>Hall Decoration with up to 25 Balloon bunches</i><br>
+                        <i>Cake table decoration</i><br>
+                        <i>Streamers & Curley ribbons for extra elegance</i><br>
+                        <i>Entrance decoration with balloon bunches</i><br>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="borderimg2" class="col-md-4 col-afternoon">
+            <div class="Parent">
+
+                <div class="child2">
+                    <h2 align="center">Refreshment</h2>
+                    <ul style="list-style-type:square;">
+                        <i>Soft Drinks</i><br>
+                        <i>Wafers</i><br>
+                        <i>Samosa</i><br>
+                        <i>Spring Roll<i><br>
+                    </ul>
+                </div>
+
+                <div class="child1">
+                    <img height="450" width="700" src="snacks.jpg" alt="">
+
+
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div id="borderimg1" class="col-md-4 col-evening">
+            <div class="Parent">
+
+                <div class="child1">
+                    <img height="450" width="700" src="caps.jpg" alt="">
+                </div>
+
+                <div class="child2">
+                    <h2 align="center">Complimentary</h2>
+                    <ul style="list-style-type:square;">
+                        <form action="/action_page.php">
+
+                            <input type="checkbox" id="balloon1" name="balloon1" value="caps">
+                            <label for="vehicle1">Birthday caps(20)</label><br>
+                            <input type="checkbox" id="balloon2" name="balloon2" value="masks">
+                            <label for="vehicle2">Eye masks(20)</label><br>
+                            <input type="checkbox" id="balloon3" name="balloon3" value="popper">
+                            <label for="vehicle3"> Popper</label><br>
+
+                            <input type="checkbox" id="balloon4" name="balloon4" value="candle">
+                            <label for="vehicle4"> Candles</label><br>
+                            <input type="checkbox" id="balloon5" name="balloon5" value="knife">
+                            <label for="vehicle5"> Knife</label><br>
+
+
+                        </form>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <button type="submit" class="block glow-button" onclick="nextpage()">Book for ₹5,500/-</button>
+
+</body>
+
+</html>

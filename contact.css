@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #ffff;
+    margin-top: 30px;
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .container {
+    width: 90%;
+    margin: 40px;
+  }
+  .form {
+    display: flex;
+  }
+  .form-left {
+    flex-basis: 50%;
+    height: 100%;
+    overflow: visible;
+    width: 50%;
+    justify-content: center;
+  }
+  .form-right {
+    flex-basis: 40%;
+    padding: 30px;
+    margin-left: 10%;
+    padding-right: 0px;
+  
+    color: #ffff;
+    margin-top: 30px uto;
+  }
+  .name,
+  .email {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border-color: rgb(0, 225, 255);
+    margin: 10px;
+    border: none;
+  }
+  .gender,
+  .number {
+    display: flex;
+    padding: 10px;
+    padding-right: 0px;
+    width: 150%;
+    outline: none;
+    border-radius: 5px;
+    border-color: rgb(0, 225, 255);
+    margin: 10px;
+    margin-right: 0px;
+    border: none;
+    justify-content: center;
+  }
+  .input-row3 {
+    display: flex;
+  }
+  
+  .messege {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    border-color: rgb(0, 225, 255);
+    margin: 10px;
+    border: none;
+  }
+  .button {
+    padding: 10px;
+    background-color: #f9eb3b;
+    outline: #f9eb3b;
+    float: right;
+    border: none;
+    border-radius: 5px;
+  }
+  b {
+    color: #f9eb3b;
+  }
+  h3 {
+    font-weight: 300;
+    color: #f9eb3b;
+  }
+  
